@@ -1,0 +1,70 @@
+@font-face {font-family:"annshandwriting"; src: url('annshandwriting.ttf');}
+
+body {	background-color: #f9f0cf; 
+		background-image: url("images/japon2.jpg");
+		background-repeat:no-repeat;
+		background-size: 100%;
+		}
+		
+.all {display: flex;}
+
+.CV {	display: flex;
+		flex-direction: row;
+		
+		}
+
+.catchphrase {	text-align:center;
+				font-family: 'annshandwriting'}
+		
+h1 {	text-align: center;
+	font-family:'annshandwriting';
+	font-size: 3em}
+	
+h2 {	color: #03427e; 
+	text-decoration:underline;
+	font-family:'annshandwriting', arial, sans-serif;
+	text-align: center;}
+
+.bandeau {	display:flex; flex-direction: column;align-items:center; width :15%;
+			background-image: url("images/texture-papier.png"); border-radius:5%
+			}
+
+.corps {width: 100%;}
+
+
+#avatar {	
+			box-shadow:6px 6px 6px black;
+			border-radius: 10%;
+			border:3px solid black
+		}
+			
+.xp, .skill, .form
+	{	display: flex ;
+		flex-direction: column;
+		padding: 1%; 
+		box-shadow:3px 3px 6px black;
+		border-radius: 2%;
+		margin: 1%;
+		margin-top: 10%;
+		}
+
+nav {	margin: 2%;
+		background-color:rgba(249,240,207,0.8); 
+		width:158px ;
+		padding-left: 1%; 
+		border-radius:10%; 
+		border:inset; }
+
+a:visited {color:black}
+
+	a {color: black}
+	
+@media screen and (max-width:1024px)
+{.bandeau {background-image:none; flex-direction:row; justify-content: space-between; margin-top: 200px;}
+header {position:absolute; top: 10px; left:30%}
+nav {position: absolute; right:3px}
+.CV {flex-direction:column; min-width: 100%;}
+.all {flex-direction: column; width:100%}
+
+
+}
